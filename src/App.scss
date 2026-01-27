@@ -1,0 +1,48 @@
+@import "./styles/variables";
+
+*{
+  box-sizing: border-box;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.container {
+  &__card,
+  &__container,
+  &__counts,
+  &__life--mind,
+  &__gift,
+  &__life--mind,
+  &.companies__container,
+  &.discount__container,
+  &.services__container,
+  &.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 4px;
+  }
+
+  .container__card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .button__header {
+    justify-content: center;
+  }
+}
